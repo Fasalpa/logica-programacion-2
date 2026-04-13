@@ -68,3 +68,26 @@ span {
   font-weight: bold;
   font-size: 1.3rem;
 }
+
+#historial {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 0;
+  gap: 0.8rem;
+}
+
+#historial li {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  color: white;
+  font-size: 0.95rem;
+  border-left: 4px solid #60a5fa;
+  transition: 0.3s ease;
+}
+
+#historial li:hover {
+  transform: translateX(5px);
+  background: rgba(255, 255, 255, 0.2);
+}

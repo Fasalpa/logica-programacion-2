@@ -3,6 +3,8 @@ let btnConvertir = document.getElementById("btnConvertir");
 let spanCelsius = document.getElementById("spanCelsius");
 let spanFahrenheit = document.getElementById("spanFahrenheit");
 let spanKelvin = document.getElementById("spanKelvin");
+let btnReset = document.getElementById("btnReset");
+let historial = document.getElementById("historial");
 
 btnConvertir.addEventListener("click", function () {
   let valorCelsius = Number(inpCelsius.value);
@@ -17,8 +19,18 @@ btnConvertir.addEventListener("click", function () {
     // alert(kelvin) ya comprobé que funciona
     spanCelsius.textContent = valorCelsius;
     //   console.log(`este es el valor de ${valorCelsius}`); ahora compruebo que el cambio span funciona
-    spanFahrenheit.textContent = fahrenheit;
-    spanKelvin.textContent = kelvin;
+    spanFahrenheit.textContent = fahrenheit.toFixed(2);
+    spanKelvin.textContent = kelvin.toFixed(2);
     inpCelsius.value = "";
+
+    let registro = document.createElement("li");
+    registro.textContent = `${valorCelsius}°C = ${fahrenheit} °F - ${kelvin} °K`;
+    historial.appendChild(registro);
   }
+});
+btnReset.addEventListener("click", function () {
+  spanCelsius.textContent = "0";
+  spanFahrenheit.textContent = "0";
+  spanKelvin.textContent = "0";
+  inpCelsius.value = "";
 });
