@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a, #2563eb);
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.15);
+  width: 90%;
+  max-width: 550px;
+  padding: 2.5rem;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  gap: 1.5rem;
+}
+
+input {
+  padding: 1rem 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 14px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  transition: 0.3s ease;
+}
+
+button {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  padding: 1rem;
+  border-radius: 14px;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 10px rgba(37, 99, 235, 0.4);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+h3 {
+  color: white;
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.8;
+}
+
+span {
+  color: #bfdbfe;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
