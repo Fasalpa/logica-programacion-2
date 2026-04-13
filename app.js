@@ -4,8 +4,6 @@ let spanCelsius = document.getElementById("spanCelsius");
 let spanFahrenheit = document.getElementById("spanFahrenheit");
 let spanKelvin = document.getElementById("spanKelvin");
 
-// let valorFharenheit = Number(intFharenheit);
-
 btnConvertir.addEventListener("click", function () {
   let valorCelsius = Number(inpCelsius.value);
 
